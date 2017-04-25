@@ -13,6 +13,11 @@
 		826981411EA8187E005DA287 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8269813F1EA8187E005DA287 /* LaunchScreen.storyboard */; };
 		826981491EA819DF005DA287 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826981481EA819DF005DA287 /* MenuViewController.swift */; };
 		8275A4BD1EAF7A59004CBF12 /* MENDELMW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 8275A4BC1EAF7A59004CBF12 /* MENDELMW.TTF */; };
+		82D3B2AB1EAF837300AD373D /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D3B2AA1EAF837300AD373D /* ButtonsView.swift */; };
+		82D3B2AD1EAF840900AD373D /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D3B2AC1EAF840900AD373D /* CustomButton.swift */; };
+		82D3B2AF1EAF85F700AD373D /* LetterTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D3B2AE1EAF85F700AD373D /* LetterTextField.swift */; };
+		82D3B2B51EAF931D00AD373D /* Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D3B2B41EAF931D00AD373D /* Alphabet.swift */; };
+		82D3B2B71EAF999500AD373D /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D3B2B61EAF999500AD373D /* Global.swift */; };
 		F9E22D35533D5EB294C277F4 /* Pods_AlfabetApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69D68D7CFFC0A462BCD7399 /* Pods_AlfabetApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +30,11 @@
 		826981421EA8187E005DA287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		826981481EA819DF005DA287 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		8275A4BC1EAF7A59004CBF12 /* MENDELMW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = MENDELMW.TTF; sourceTree = "<group>"; };
+		82D3B2AA1EAF837300AD373D /* ButtonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
+		82D3B2AC1EAF840900AD373D /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		82D3B2AE1EAF85F700AD373D /* LetterTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetterTextField.swift; sourceTree = "<group>"; };
+		82D3B2B41EAF931D00AD373D /* Alphabet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alphabet.swift; sourceTree = "<group>"; };
+		82D3B2B61EAF999500AD373D /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		DBC0E593FF1B03E13848A1EA /* Pods-AlfabetApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlfabetApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlfabetApp/Pods-AlfabetApp.release.xcconfig"; sourceTree = "<group>"; };
 		E7BC9A473CBEC47762C56A31 /* Pods-AlfabetApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlfabetApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlfabetApp/Pods-AlfabetApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F69D68D7CFFC0A462BCD7399 /* Pods_AlfabetApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlfabetApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,8 +83,10 @@
 			isa = PBXGroup;
 			children = (
 				826981361EA8187E005DA287 /* AppDelegate.swift */,
-				826981381EA8187E005DA287 /* PracticeViewController.swift */,
-				826981481EA819DF005DA287 /* MenuViewController.swift */,
+				82D3B2B41EAF931D00AD373D /* Alphabet.swift */,
+				82D3B2B61EAF999500AD373D /* Global.swift */,
+				82D3B2B01EAF866700AD373D /* View */,
+				82D3B2B11EAF866F00AD373D /* Controller */,
 				8269813D1EA8187E005DA287 /* Assets.xcassets */,
 				8269813F1EA8187E005DA287 /* LaunchScreen.storyboard */,
 				826981421EA8187E005DA287 /* Info.plist */,
@@ -89,6 +101,25 @@
 				8275A4BC1EAF7A59004CBF12 /* MENDELMW.TTF */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		82D3B2B01EAF866700AD373D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82D3B2AE1EAF85F700AD373D /* LetterTextField.swift */,
+				82D3B2AA1EAF837300AD373D /* ButtonsView.swift */,
+				82D3B2AC1EAF840900AD373D /* CustomButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		82D3B2B11EAF866F00AD373D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				826981381EA8187E005DA287 /* PracticeViewController.swift */,
+				826981481EA819DF005DA287 /* MenuViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		C233D3A9B617EB8EEE270631 /* Frameworks */ = {
@@ -223,9 +254,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82D3B2B71EAF999500AD373D /* Global.swift in Sources */,
 				826981391EA8187E005DA287 /* PracticeViewController.swift in Sources */,
 				826981491EA819DF005DA287 /* MenuViewController.swift in Sources */,
+				82D3B2B51EAF931D00AD373D /* Alphabet.swift in Sources */,
+				82D3B2AB1EAF837300AD373D /* ButtonsView.swift in Sources */,
+				82D3B2AF1EAF85F700AD373D /* LetterTextField.swift in Sources */,
 				826981371EA8187E005DA287 /* AppDelegate.swift in Sources */,
+				82D3B2AD1EAF840900AD373D /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
