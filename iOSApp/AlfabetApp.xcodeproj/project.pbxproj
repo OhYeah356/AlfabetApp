@@ -13,6 +13,7 @@
 		826981411EA8187E005DA287 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8269813F1EA8187E005DA287 /* LaunchScreen.storyboard */; };
 		826981491EA819DF005DA287 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826981481EA819DF005DA287 /* MenuViewController.swift */; };
 		8275A4BD1EAF7A59004CBF12 /* MENDELMW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 8275A4BC1EAF7A59004CBF12 /* MENDELMW.TTF */; };
+		F9E22D35533D5EB294C277F4 /* Pods_AlfabetApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69D68D7CFFC0A462BCD7399 /* Pods_AlfabetApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		826981421EA8187E005DA287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		826981481EA819DF005DA287 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		8275A4BC1EAF7A59004CBF12 /* MENDELMW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = MENDELMW.TTF; sourceTree = "<group>"; };
+		DBC0E593FF1B03E13848A1EA /* Pods-AlfabetApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlfabetApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlfabetApp/Pods-AlfabetApp.release.xcconfig"; sourceTree = "<group>"; };
+		E7BC9A473CBEC47762C56A31 /* Pods-AlfabetApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlfabetApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlfabetApp/Pods-AlfabetApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F69D68D7CFFC0A462BCD7399 /* Pods_AlfabetApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlfabetApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9E22D35533D5EB294C277F4 /* Pods_AlfabetApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C1D8CC3DCD4D7E9A98A4ED6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7BC9A473CBEC47762C56A31 /* Pods-AlfabetApp.debug.xcconfig */,
+				DBC0E593FF1B03E13848A1EA /* Pods-AlfabetApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8269812A1EA8187E005DA287 = {
 			isa = PBXGroup;
 			children = (
 				826981351EA8187E005DA287 /* AlfabetApp */,
 				826981341EA8187E005DA287 /* Products */,
+				3C1D8CC3DCD4D7E9A98A4ED6 /* Pods */,
+				C233D3A9B617EB8EEE270631 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +91,14 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		C233D3A9B617EB8EEE270631 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F69D68D7CFFC0A462BCD7399 /* Pods_AlfabetApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 826981451EA8187E005DA287 /* Build configuration list for PBXNativeTarget "AlfabetApp" */;
 			buildPhases = (
+				FEA1D77F299F4D4459F62C7F /* [CP] Check Pods Manifest.lock */,
 				8269812F1EA8187E005DA287 /* Sources */,
 				826981301EA8187E005DA287 /* Frameworks */,
 				826981311EA8187E005DA287 /* Resources */,
+				8EE330899BC244D46A31BC9B /* [CP] Embed Pods Frameworks */,
+				72F09A7A77150E3335AAA752 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,6 +169,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72F09A7A77150E3335AAA752 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlfabetApp/Pods-AlfabetApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EE330899BC244D46A31BC9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlfabetApp/Pods-AlfabetApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEA1D77F299F4D4459F62C7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8269812F1EA8187E005DA287 /* Sources */ = {
@@ -263,6 +338,7 @@
 		};
 		826981461EA8187E005DA287 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7BC9A473CBEC47762C56A31 /* Pods-AlfabetApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 469862744M;
@@ -276,6 +352,7 @@
 		};
 		826981471EA8187E005DA287 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBC0E593FF1B03E13848A1EA /* Pods-AlfabetApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 469862744M;
