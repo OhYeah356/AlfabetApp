@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let rootVC = ViewController()
+        let rootVC = PracticeViewController()
         
         let navigationController = UINavigationController(rootViewController: rootVC)
         window = UIWindow(frame: UIScreen.main.bounds)

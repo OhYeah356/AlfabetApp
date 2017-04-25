@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		826981371EA8187E005DA287 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826981361EA8187E005DA287 /* AppDelegate.swift */; };
-		826981391EA8187E005DA287 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826981381EA8187E005DA287 /* ViewController.swift */; };
+		826981391EA8187E005DA287 /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826981381EA8187E005DA287 /* PracticeViewController.swift */; };
 		8269813E1EA8187E005DA287 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8269813D1EA8187E005DA287 /* Assets.xcassets */; };
 		826981411EA8187E005DA287 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8269813F1EA8187E005DA287 /* LaunchScreen.storyboard */; };
+		826981491EA819DF005DA287 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826981481EA819DF005DA287 /* MenuViewController.swift */; };
+		8275A4BD1EAF7A59004CBF12 /* MENDELMW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 8275A4BC1EAF7A59004CBF12 /* MENDELMW.TTF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		826981331EA8187E005DA287 /* AlfabetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlfabetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		826981361EA8187E005DA287 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		826981381EA8187E005DA287 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		826981381EA8187E005DA287 /* PracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
 		8269813D1EA8187E005DA287 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		826981401EA8187E005DA287 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		826981421EA8187E005DA287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		826981481EA819DF005DA287 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		8275A4BC1EAF7A59004CBF12 /* MENDELMW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = MENDELMW.TTF; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,12 +57,22 @@
 			isa = PBXGroup;
 			children = (
 				826981361EA8187E005DA287 /* AppDelegate.swift */,
-				826981381EA8187E005DA287 /* ViewController.swift */,
+				826981381EA8187E005DA287 /* PracticeViewController.swift */,
+				826981481EA819DF005DA287 /* MenuViewController.swift */,
 				8269813D1EA8187E005DA287 /* Assets.xcassets */,
 				8269813F1EA8187E005DA287 /* LaunchScreen.storyboard */,
 				826981421EA8187E005DA287 /* Info.plist */,
+				82D1B3F81EAF79C30083F3AB /* Resources */,
 			);
 			path = AlfabetApp;
+			sourceTree = "<group>";
+		};
+		82D1B3F81EAF79C30083F3AB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8275A4BC1EAF7A59004CBF12 /* MENDELMW.TTF */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +137,7 @@
 			files = (
 				826981411EA8187E005DA287 /* LaunchScreen.storyboard in Resources */,
 				8269813E1EA8187E005DA287 /* Assets.xcassets in Resources */,
+				8275A4BD1EAF7A59004CBF12 /* MENDELMW.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				826981391EA8187E005DA287 /* ViewController.swift in Sources */,
+				826981391EA8187E005DA287 /* PracticeViewController.swift in Sources */,
+				826981491EA819DF005DA287 /* MenuViewController.swift in Sources */,
 				826981371EA8187E005DA287 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
